@@ -1,0 +1,118 @@
+*{
+margin: 0rem;
+padding: 0rem;
+box-sizing: border-box;
+}
+body{
+  overflow-x: hidden !important;
+}
+.end_text{
+  background: #2a2a2e;
+}
+.fw_600{
+  font-weight: 600;
+}
+.sideBar{
+  background: #38383d;
+  position: absolute;
+  top: 30%;
+  left: 0%;
+  display: grid;
+  place-items: center;
+}
+@media screen and (max-width:600px) {
+  .sideBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+    top: 90%;
+  }
+}
+.fs_20{
+  font-size: 30px;
+}
+.whole_div{
+height: 100vh;
+width: 100vw;
+/* border: 1px solid black; */
+background: #2a2a2e;
+color: #616169;
+display: flex;
+justify-content: center;
+}
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+img{
+height: 70px;
+width: 70px;margin-right: 10px;
+}
+form{
+text-align: center;
+}
+#input1,#input2{
+background: #38383d;
+border: none;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#input1,#input2,button{
+display: block;
+height: 50px;
+width: 800px;
+margin: 20px;
+border-radius: 0px;
+transition: box-shadow linear 2s;
+transition: border linear 2s;
+}
+button{
+width: 400px;
+}
+#input1:hover{
+box-shadow: 0px 1px 9px 0px rgba(64,64,245,0.75);
+-webkit-box-shadow: 0px 1px 9px 0px rgba(64,64,245,0.75);
+-moz-box-shadow: 0px 1px 9px 0px rgba(64,64,245,0.75);
+border: 1px solid rgb(84, 84, 255);
+}
+#input2:hover{
+box-shadow: 0px 1px 9px 0px rgba(64,64,245,0.75);
+-webkit-box-shadow: 0px 1px 9px 0px rgba(64,64,245,0.75);
+-moz-box-shadow: 0px 1px 9px 0px rgba(64,64,245,0.75);
+border: 1px solid rgb(84, 84, 255);
+}
+input::placeholder{
+text-align: center;
+color: #616169; 
+font-size: 1rem;
+}
+h1{
+color: white;
+font-weight: 1000;
+}
+@media screen and (max-width: 832px){
+#input1,#input2{
+width: 410px;
+}
+button{
+width: 205px;
+}
+}
+@media screen and (max-width: 432px){
+#input1,#input2{
+width: 295px;
+}
+}
+h1:hover span{
+color: #fff;
+text-shadow: 0 0 10px #fff,
+0 0 20px #fff, 
+0 0 40px #fff;
+}
